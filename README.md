@@ -519,16 +519,27 @@ DATASET = 'olist_raw_analytics'
 
 Reun below commands
 `conda env update -f prj-environment.yml --prune`
+
 `conda activate prj`
+
 `python ingest_olist.py`
+
 `cd Melt`
+
 `meltano invoke dbt-bigquery:run-operation stage_external_sources --args "{select: olist_raw}"`
+
 `cd ..`
+
 `cd d ./dbt/olist_analytics/`
+
 `dbt run`
+
 `ccd ../..`
+
 `python bq_checks.py`
+
 `dashboard_rev2.py`
+
 
 
 
