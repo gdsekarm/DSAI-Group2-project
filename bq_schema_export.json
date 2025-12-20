@@ -1,0 +1,386 @@
+{
+    "dim_customers": [
+        {
+            "name": "customer_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "customer_unique_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "zip_code",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "city",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "state",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_date": [
+        {
+            "name": "date_day",
+            "type": "DATE",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "year",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "month",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "day",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "day_of_week",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "month_name",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "day_name",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "is_weekend",
+            "type": "BOOLEAN",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_geolocation": [
+        {
+            "name": "zip_code",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "latitude",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "longitude",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "city",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "state",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_payments": [
+        {
+            "name": "payment_sk",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "order_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "payment_sequential",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "payment_type",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "payment_installments",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "payment_value",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_products": [
+        {
+            "name": "product_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "category_name",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "photos_quantity",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "weight_g",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "length_cm",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "height_cm",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "width_cm",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_reviews": [
+        {
+            "name": "review_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "order_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "review_score",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "review_comment_title",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "review_comment_message",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "review_created_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "review_answered_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "dim_sellers": [
+        {
+            "name": "seller_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "zip_code",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "city",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "state",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "fct_order_items": [
+        {
+            "name": "order_item_sk",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "order_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "order_item_id",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "product_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "seller_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "customer_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "price",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "freight_value",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "total_order_value",
+            "type": "FLOAT",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ],
+    "fct_orders": [
+        {
+            "name": "order_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "customer_id",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "order_status",
+            "type": "STRING",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "purchase_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "approved_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "delivered_carrier_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "delivered_customer_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "estimated_delivery_at",
+            "type": "TIMESTAMP",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "time_to_delivery_hours",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        },
+        {
+            "name": "days_early_or_late",
+            "type": "INTEGER",
+            "mode": "NULLABLE",
+            "description": null
+        }
+    ]
+}
