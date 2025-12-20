@@ -57,6 +57,8 @@ sources:
           options:
             format: csv
             skip_leading_rows: 1
+            allow_quoted_newlines: true  # <--- THIS IS THE MISSING LINE
+            quote: '"' # Ensures it knows what quote character to use
 
       # 7. Products (Repeat for other files in your screenshot)
       - name: products
