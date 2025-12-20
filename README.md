@@ -509,4 +509,36 @@ creates dim and fact table in bigQuery
 ![alt text](image-2.png)
 
 
-## Data Analytics and visualization
+Edit dashboard_rev2.py and Replace,  with your credentials in the below lines in the file. 
+# --- 2. AUTHENTICATION ---
+KEY_FILE = 'stellar-verve-478012-n6-5c79fd657d1a.json'
+PROJECT_ID = 'stellar-verve-478012-n6'
+DATASET = 'olist_raw_analytics'
+
+#### How to run the final poroject After setup
+
+Reun below commands
+`conda env update -f prj-environment.yml --prune`
+`conda activate prj`
+`python ingest_olist.py`
+`cd Melt`
+`meltano invoke dbt-bigquery:run-operation stage_external_sources --args "{select: olist_raw}"`
+`cd ..`
+`cd d ./dbt/olist_analytics/`
+`dbt run`
+`ccd ../..`
+`python bq_checks.py`
+`dashboard_rev2.py`
+
+
+
+
+
+
+
+
+
+
+
+
+
