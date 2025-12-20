@@ -1,5 +1,5 @@
 with customers as (
-    select * from {{ ref('stg_customers') }}
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_customers`
 )
 
 select
