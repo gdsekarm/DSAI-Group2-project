@@ -1,65 +1,64 @@
 
 
-============================== 11:36:22.825905 | 00557758-3bd5-4942-b28a-82a2848c2f30 ==============================
-[0m11:36:22.825905 [info ] [MainThread]: Running with dbt=1.10.15
-[0m11:36:22.828469 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/transform/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'write_json': 'True', 'empty': 'None', 'log_format': 'default', 'use_colors': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'profiles_dir': '/Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/transform/profiles/bigquery', 'send_anonymous_usage_stats': 'False', 'partial_parse': 'True', 'quiet': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'invocation_command': 'dbt deps', 'no_print': 'None', 'warn_error': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'target_path': 'None'}
-[0m11:36:22.908442 [debug] [MainThread]: Set downloads directory='/var/folders/93/j55r4pt15y77lgqnbbw8vgvm0000gn/T/dbt-downloads-gl5bfpie'
-[0m11:36:22.908816 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
-[0m11:36:23.083316 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
-[0m11:36:23.084988 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json
-[0m11:36:23.178107 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json 200
-[0m11:36:23.182086 [info ] [MainThread]: Installing dbt-labs/dbt_external_tables
-[0m11:36:23.851893 [info ] [MainThread]: Installed from version 0.12.0
-[0m11:36:23.852269 [info ] [MainThread]: Up to date!
-[0m11:36:23.854502 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.0641285, "process_in_blocks": "0", "process_kernel_time": 0.166511, "process_mem_max_rss": "124452864", "process_out_blocks": "0", "process_user_time": 0.817119}
-[0m11:36:23.854906 [debug] [MainThread]: Command `dbt deps` succeeded at 11:36:23.854845 after 1.06 seconds
-[0m11:36:23.855210 [debug] [MainThread]: Flushing usage events
+============================== 14:23:44.733351 | cef0a39f-45d3-4685-8b54-b7160b927ba2 ==============================
+[0m14:23:44.733351 [info ] [MainThread]: Running with dbt=1.10.17
+[0m14:23:44.735973 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_format': 'default', 'empty': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False', 'log_path': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/transform/logs', 'quiet': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'profiles_dir': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/transform/profiles/bigquery', 'version_check': 'True'}
+[0m14:23:44.814627 [debug] [MainThread]: Set downloads directory='/var/folders/93/j55r4pt15y77lgqnbbw8vgvm0000gn/T/dbt-downloads-cemszwfg'
+[0m14:23:44.814996 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m14:23:44.924590 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m14:23:44.926181 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json
+[0m14:23:44.971843 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_external_tables.json 200
+[0m14:23:44.975123 [info ] [MainThread]: Installing dbt-labs/dbt_external_tables
+[0m14:23:45.478487 [info ] [MainThread]: Installed from version 0.12.0
+[0m14:23:45.478910 [info ] [MainThread]: Up to date!
+[0m14:23:45.481275 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.7831191, "process_in_blocks": "0", "process_kernel_time": 0.16237, "process_mem_max_rss": "125419520", "process_out_blocks": "0", "process_user_time": 0.816506}
+[0m14:23:45.481701 [debug] [MainThread]: Command `dbt deps` succeeded at 14:23:45.481635 after 0.78 seconds
+[0m14:23:45.482008 [debug] [MainThread]: Flushing usage events
 
 
-============================== 11:36:24.786192 | 7955b9cb-04fd-44f8-8f81-df03e0ca20e0 ==============================
-[0m11:36:24.786192 [info ] [MainThread]: Running with dbt=1.10.15
-[0m11:36:24.788705 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': '/Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/.meltano/transformers/dbt/target', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run-operation stage_external_sources --args {select: olist_raw}', 'profiles_dir': '/Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/transform/profiles/bigquery', 'quiet': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'empty': 'None', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'version_check': 'True', 'log_format': 'default', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'send_anonymous_usage_stats': 'False', 'log_path': '/Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/transform/logs', 'warn_error': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'printer_width': '80'}
-[0m11:36:26.803951 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
-[0m11:36:26.989778 [debug] [MainThread]: checksum: 14a228079bd6df63ba81633f9a3cf44ecfaa31056ac397c602753ec895dbf885, vars: {}, profile: , target: , version: 1.10.15
-[0m11:36:27.048471 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
-[0m11:36:27.048769 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
-[0m11:36:27.049241 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+============================== 14:23:46.458485 | c8c4576f-6675-4055-9530-cdd58c2abf06 ==============================
+[0m14:23:46.458485 [info ] [MainThread]: Running with dbt=1.10.17
+[0m14:23:46.461253 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'False', 'profiles_dir': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/transform/profiles/bigquery', 'target_path': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/.meltano/transformers/dbt/target', 'log_format': 'default', 'partial_parse': 'True', 'use_colors': 'True', 'write_json': 'True', 'debug': 'False', 'warn_error': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_path': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/transform/logs', 'fail_fast': 'False', 'version_check': 'True', 'invocation_command': 'dbt run-operation stage_external_sources --args {select: olist_raw}', 'quiet': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False'}
+[0m14:24:05.655481 [info ] [MainThread]: Registered adapter: bigquery=1.10.3
+[0m14:24:05.850076 [debug] [MainThread]: checksum: a50d730a31f4c1af850aa8110f398f1e1657a0325ec5753dae2929b817189a3e, vars: {}, profile: , target: , version: 1.10.17
+[0m14:24:05.850739 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:24:06.566509 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
 There are 1 unused configuration paths:
 - models
-[0m11:36:27.092456 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/.meltano/transformers/dbt/target/manifest.json
-[0m11:36:27.093853 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/.meltano/transformers/dbt/target/semantic_manifest.json
-[0m11:36:27.100364 [info ] [MainThread]: Found 9 sources, 570 macros
-[0m11:36:27.100825 [debug] [MainThread]: Acquiring new bigquery connection 'macro_stage_external_sources'
-[0m11:36:27.111394 [info ] [MainThread]: 1 of 9 START external source olist_raw.orders
-[0m11:36:27.115098 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:27.115379 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m11:36:27.894933 [info ] [MainThread]: 1 of 9 SKIP
-[0m11:36:27.899147 [info ] [MainThread]: 2 of 9 START external source olist_raw.customers
-[0m11:36:27.900000 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:28.499529 [info ] [MainThread]: 2 of 9 SKIP
-[0m11:36:28.501620 [info ] [MainThread]: 3 of 9 START external source olist_raw.geolocation
-[0m11:36:28.502950 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:29.113512 [info ] [MainThread]: 3 of 9 SKIP
-[0m11:36:29.115526 [info ] [MainThread]: 4 of 9 START external source olist_raw.order_items
-[0m11:36:29.116825 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:29.730940 [info ] [MainThread]: 4 of 9 SKIP
-[0m11:36:29.732914 [info ] [MainThread]: 5 of 9 START external source olist_raw.payments
-[0m11:36:29.733726 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:30.342772 [info ] [MainThread]: 5 of 9 SKIP
-[0m11:36:30.345077 [info ] [MainThread]: 6 of 9 START external source olist_raw.reviews
-[0m11:36:30.346498 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:30.861344 [info ] [MainThread]: 6 of 9 SKIP
-[0m11:36:30.863293 [info ] [MainThread]: 7 of 9 START external source olist_raw.products
-[0m11:36:30.864514 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:31.400767 [info ] [MainThread]: 7 of 9 SKIP
-[0m11:36:31.403406 [info ] [MainThread]: 8 of 9 START external source olist_raw.sellers
-[0m11:36:31.404425 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:31.879469 [info ] [MainThread]: 8 of 9 SKIP
-[0m11:36:31.881573 [info ] [MainThread]: 9 of 9 START external source olist_raw.category_translation
-[0m11:36:31.882815 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
-[0m11:36:32.493324 [info ] [MainThread]: 9 of 9 SKIP
-[0m11:36:32.506808 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/govindandhanasekaran/Dev/Github/M2_PROJECT/Melt/.meltano/transformers/dbt/target/run_results.json
-[0m11:36:32.511611 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 7.760479, "process_in_blocks": "0", "process_kernel_time": 0.497043, "process_mem_max_rss": "399360000", "process_out_blocks": "0", "process_user_time": 2.313977}
-[0m11:36:32.512362 [debug] [MainThread]: Command `dbt run-operation` succeeded at 11:36:32.512265 after 7.76 seconds
-[0m11:36:32.512812 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
-[0m11:36:32.513220 [debug] [MainThread]: Flushing usage events
+[0m14:24:06.606341 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/.meltano/transformers/dbt/target/manifest.json
+[0m14:24:06.608034 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/.meltano/transformers/dbt/target/semantic_manifest.json
+[0m14:24:06.619309 [info ] [MainThread]: Found 9 sources, 573 macros
+[0m14:24:06.619793 [debug] [MainThread]: Acquiring new bigquery connection 'macro_stage_external_sources'
+[0m14:24:06.629089 [info ] [MainThread]: 1 of 9 START external source olist_raw.orders
+[0m14:24:06.633247 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:06.633649 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:24:07.151220 [info ] [MainThread]: 1 of 9 SKIP
+[0m14:24:07.153362 [info ] [MainThread]: 2 of 9 START external source olist_raw.customers
+[0m14:24:07.153813 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:07.468852 [info ] [MainThread]: 2 of 9 SKIP
+[0m14:24:07.470651 [info ] [MainThread]: 3 of 9 START external source olist_raw.geolocation
+[0m14:24:07.471589 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:07.845712 [info ] [MainThread]: 3 of 9 SKIP
+[0m14:24:07.847243 [info ] [MainThread]: 4 of 9 START external source olist_raw.order_items
+[0m14:24:07.848350 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:08.244967 [info ] [MainThread]: 4 of 9 SKIP
+[0m14:24:08.247160 [info ] [MainThread]: 5 of 9 START external source olist_raw.payments
+[0m14:24:08.248049 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:08.568386 [info ] [MainThread]: 5 of 9 SKIP
+[0m14:24:08.570403 [info ] [MainThread]: 6 of 9 START external source olist_raw.reviews
+[0m14:24:08.571125 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:08.974825 [info ] [MainThread]: 6 of 9 SKIP
+[0m14:24:08.976718 [info ] [MainThread]: 7 of 9 START external source olist_raw.products
+[0m14:24:08.977464 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:09.526253 [info ] [MainThread]: 7 of 9 SKIP
+[0m14:24:09.526885 [info ] [MainThread]: 8 of 9 START external source olist_raw.sellers
+[0m14:24:09.527527 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:09.871096 [info ] [MainThread]: 8 of 9 SKIP
+[0m14:24:09.872789 [info ] [MainThread]: 9 of 9 START external source olist_raw.category_translation
+[0m14:24:09.874227 [debug] [MainThread]: On "macro_stage_external_sources": cache miss for schema "stellar-verve-478012-n6.olist_raw", this is inefficient
+[0m14:24:10.186152 [info ] [MainThread]: 9 of 9 SKIP
+[0m14:24:10.201099 [debug] [MainThread]: Wrote artifact RunResultsArtifact to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/Melt/.meltano/transformers/dbt/target/run_results.json
+[0m14:24:10.208283 [debug] [MainThread]: Resource report: {"command_name": "run-operation", "command_success": true, "command_wall_clock_time": 23.802166, "process_in_blocks": "0", "process_kernel_time": 1.876204, "process_mem_max_rss": "406503424", "process_out_blocks": "0", "process_user_time": 4.344533}
+[0m14:24:10.209115 [debug] [MainThread]: Command `dbt run-operation` succeeded at 14:24:10.209010 after 23.80 seconds
+[0m14:24:10.209659 [debug] [MainThread]: Connection 'macro_stage_external_sources' was properly closed.
+[0m14:24:10.210238 [debug] [MainThread]: Flushing usage events

@@ -5606,3 +5606,752 @@ from sellers
 [0m11:40:00.472768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113276390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1028f7910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11347aed0>]}
 [0m11:40:00.473054 [debug] [MainThread]: Flushing usage events
 [0m11:40:02.810638 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:26:24.237854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107751890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077de110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077de550>]}
+
+
+============================== 14:26:24.240706 | 1ba994f2-c2d0-4134-b65a-4ffc11048ac5 ==============================
+[0m14:26:24.240706 [info ] [MainThread]: Running with dbt=1.9.6
+[0m14:26:24.241065 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/govindandhanasekaran/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:26:28.675836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x3087b9010>]}
+[0m14:26:28.712261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103d51f10>]}
+[0m14:26:28.712647 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m14:26:28.882282 [debug] [MainThread]: checksum: dd6dc1e5178459e3de3bf2eeb7c86bed4be2266c311fce8c15d86eb4ff94e7ad, vars: {}, profile: , target: , version: 1.9.6
+[0m14:26:28.951722 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:26:28.951969 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:26:28.970006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x308ab6290>]}
+[0m14:26:29.009115 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/target/manifest.json
+[0m14:26:29.010291 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/target/semantic_manifest.json
+[0m14:26:29.024085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16fa3fe90>]}
+[0m14:26:29.024389 [info ] [MainThread]: Found 18 models, 9 sources, 494 macros
+[0m14:26:29.024592 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077322d0>]}
+[0m14:26:29.025987 [info ] [MainThread]: 
+[0m14:26:29.026196 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:26:29.026352 [info ] [MainThread]: 
+[0m14:26:29.026620 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m14:26:29.029173 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_stellar-verve-478012-n6'
+[0m14:26:29.029417 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:26:29.577833 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:26:30.013489 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stellar-verve-478012-n6, now list_stellar-verve-478012-n6_olist_raw_staging)
+[0m14:26:30.014077 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:26:30.476990 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_stellar-verve-478012-n6_olist_raw_staging, now list_stellar-verve-478012-n6_olist_raw_analytics)
+[0m14:26:30.479543 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:26:30.891248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x308938590>]}
+[0m14:26:30.892346 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:26:30.898415 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_date
+[0m14:26:30.899125 [info ] [Thread-1 (]: 1 of 18 START sql table model olist_raw_analytics.dim_date ..................... [RUN]
+[0m14:26:30.899676 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_stellar-verve-478012-n6_olist_raw_analytics, now model.olist_analytics.dim_date)
+[0m14:26:30.900080 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_date
+[0m14:26:30.911659 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_date"
+[0m14:26:30.912982 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_date
+[0m14:26:30.925950 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:31.429970 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_date"
+[0m14:26:31.430849 [debug] [Thread-1 (]: On model.olist_analytics.dim_date: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_date"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_date`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      -- Standard BigQuery SQL to generate dates
+with date_spine as (
+  select 
+    * from 
+    unnest(generate_date_array('2016-01-01', '2020-01-01', interval 1 day)) as date_day
+)
+
+select
+  date_day,
+  extract(year from date_day) as year,
+  extract(month from date_day) as month,
+  extract(day from date_day) as day,
+  extract(dayofweek from date_day) as day_of_week,
+  format_date('%B', date_day) as month_name,
+  format_date('%A', date_day) as day_name,
+  case when extract(dayofweek from date_day) in (1, 7) then true else false end as is_weekend
+from date_spine
+    );
+  
+[0m14:26:32.417881 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:d6b696c8-217b-4ee6-a586-1d6cc8dea58d&page=queryresults
+[0m14:26:34.792974 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30ddfddd0>]}
+[0m14:26:34.793750 [info ] [Thread-1 (]: 1 of 18 OK created sql table model olist_raw_analytics.dim_date ................ [[32mCREATE TABLE (1.5k rows, 0 processed)[0m in 3.89s]
+[0m14:26:34.794374 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_date
+[0m14:26:34.794773 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_customers
+[0m14:26:34.795197 [info ] [Thread-1 (]: 2 of 18 START sql view model olist_raw_staging.stg_customers ................... [RUN]
+[0m14:26:34.795625 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_date, now model.olist_analytics.stg_customers)
+[0m14:26:34.795957 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_customers
+[0m14:26:34.799242 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_customers"
+[0m14:26:34.800079 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_customers
+[0m14:26:34.815717 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_customers"
+[0m14:26:34.816511 [debug] [Thread-1 (]: On model.olist_analytics.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_customers"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_customers`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`customers`
+),
+
+renamed as (
+    select
+        customer_id,
+        customer_unique_id,
+        customer_zip_code_prefix as zip_code,
+        customer_city as city,
+        customer_state as state
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:34.816921 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:35.628081 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:05fd371b-7b4b-4e1f-82d7-2835309a6dc1&page=queryresults
+[0m14:26:36.280851 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x308f929d0>]}
+[0m14:26:36.281548 [info ] [Thread-1 (]: 2 of 18 OK created sql view model olist_raw_staging.stg_customers .............. [[32mCREATE VIEW (0 processed)[0m in 1.49s]
+[0m14:26:36.281921 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_customers
+[0m14:26:36.282151 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_geolocation
+[0m14:26:36.282594 [info ] [Thread-1 (]: 3 of 18 START sql view model olist_raw_staging.stg_geolocation ................. [RUN]
+[0m14:26:36.283068 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_customers, now model.olist_analytics.stg_geolocation)
+[0m14:26:36.283323 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_geolocation
+[0m14:26:36.285283 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_geolocation"
+[0m14:26:36.285875 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_geolocation
+[0m14:26:36.287596 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_geolocation"
+[0m14:26:36.288190 [debug] [Thread-1 (]: On model.olist_analytics.stg_geolocation: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_geolocation"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_geolocation`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`geolocation`
+),
+
+renamed as (
+    select distinct
+        geolocation_zip_code_prefix as zip_code,
+        geolocation_lat as latitude,
+        geolocation_lng as longitude,
+        geolocation_city as city,
+        geolocation_state as state
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:36.288554 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:36.946669 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:2a902f62-7c36-4645-9a68-481533f84186&page=queryresults
+[0m14:26:37.847975 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30dd89150>]}
+[0m14:26:37.848724 [info ] [Thread-1 (]: 3 of 18 OK created sql view model olist_raw_staging.stg_geolocation ............ [[32mCREATE VIEW (0 processed)[0m in 1.56s]
+[0m14:26:37.849206 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_geolocation
+[0m14:26:37.849517 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_order_items
+[0m14:26:37.849844 [info ] [Thread-1 (]: 4 of 18 START sql view model olist_raw_staging.stg_order_items ................. [RUN]
+[0m14:26:37.850269 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_geolocation, now model.olist_analytics.stg_order_items)
+[0m14:26:37.850684 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_order_items
+[0m14:26:37.853380 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_order_items"
+[0m14:26:37.854112 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_order_items
+[0m14:26:37.857570 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_order_items"
+[0m14:26:37.858572 [debug] [Thread-1 (]: On model.olist_analytics.stg_order_items: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_order_items"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_items`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`order_items`
+),
+
+renamed as (
+    select
+        order_id,
+        order_item_id,
+        product_id,
+        seller_id,
+        cast(shipping_limit_date as timestamp) as shipping_limit_date,
+        price,
+        freight_value
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:37.859041 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:38.646930 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:07ef72bc-edb4-4a9a-833e-095b8b1474f4&page=queryresults
+[0m14:26:39.367378 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16f989410>]}
+[0m14:26:39.368089 [info ] [Thread-1 (]: 4 of 18 OK created sql view model olist_raw_staging.stg_order_items ............ [[32mCREATE VIEW (0 processed)[0m in 1.52s]
+[0m14:26:39.368438 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_order_items
+[0m14:26:39.368655 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_order_payments
+[0m14:26:39.368958 [info ] [Thread-1 (]: 5 of 18 START sql view model olist_raw_staging.stg_order_payments .............. [RUN]
+[0m14:26:39.369826 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_order_items, now model.olist_analytics.stg_order_payments)
+[0m14:26:39.370268 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_order_payments
+[0m14:26:39.372180 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_order_payments"
+[0m14:26:39.372667 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_order_payments
+[0m14:26:39.375652 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_order_payments"
+[0m14:26:39.376344 [debug] [Thread-1 (]: On model.olist_analytics.stg_order_payments: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_order_payments"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_payments`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`payments`
+),
+
+renamed as (
+    select
+        order_id,
+        payment_sequential,
+        payment_type,
+        payment_installments,
+        payment_value
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:39.376594 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:39.954357 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:e2dd7788-3d38-4d8d-b8a0-2aedb4c62bc0&page=queryresults
+[0m14:26:40.613527 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30de85450>]}
+[0m14:26:40.613966 [info ] [Thread-1 (]: 5 of 18 OK created sql view model olist_raw_staging.stg_order_payments ......... [[32mCREATE VIEW (0 processed)[0m in 1.24s]
+[0m14:26:40.614258 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_order_payments
+[0m14:26:40.614457 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_order_reviews
+[0m14:26:40.614669 [info ] [Thread-1 (]: 6 of 18 START sql view model olist_raw_staging.stg_order_reviews ............... [RUN]
+[0m14:26:40.614878 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_order_payments, now model.olist_analytics.stg_order_reviews)
+[0m14:26:40.615058 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_order_reviews
+[0m14:26:40.616978 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_order_reviews"
+[0m14:26:40.617454 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_order_reviews
+[0m14:26:40.618918 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_order_reviews"
+[0m14:26:40.619271 [debug] [Thread-1 (]: On model.olist_analytics.stg_order_reviews: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_order_reviews"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_reviews`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`reviews`
+),
+
+renamed as (
+    select
+        review_id,
+        order_id,
+        review_score,
+        review_comment_title,
+        review_comment_message,
+        cast(review_creation_date as timestamp) as created_at,
+        cast(review_answer_timestamp as timestamp) as answer_timestamp
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:40.619480 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:41.227987 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:bfbb1603-ae18-4f53-ac98-328d5250ef3a&page=queryresults
+[0m14:26:41.840333 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30de84210>]}
+[0m14:26:41.841212 [info ] [Thread-1 (]: 6 of 18 OK created sql view model olist_raw_staging.stg_order_reviews .......... [[32mCREATE VIEW (0 processed)[0m in 1.23s]
+[0m14:26:41.841694 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_order_reviews
+[0m14:26:41.842034 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_orders
+[0m14:26:41.842302 [info ] [Thread-1 (]: 7 of 18 START sql view model olist_raw_staging.stg_orders ...................... [RUN]
+[0m14:26:41.842565 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_order_reviews, now model.olist_analytics.stg_orders)
+[0m14:26:41.842758 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_orders
+[0m14:26:41.844503 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_orders"
+[0m14:26:41.844953 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_orders
+[0m14:26:41.846480 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_orders"
+[0m14:26:41.846846 [debug] [Thread-1 (]: On model.olist_analytics.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_orders"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_orders`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`orders`
+),
+
+renamed as (
+    select
+        order_id,
+        customer_id,
+        order_status,
+        -- Timestamp Conversions
+        cast(order_purchase_timestamp as timestamp) as purchase_at,
+        cast(order_approved_at as timestamp) as approved_at,
+        cast(order_delivered_carrier_date as timestamp) as delivered_carrier_at,
+        cast(order_delivered_customer_date as timestamp) as delivered_customer_at,
+        cast(order_estimated_delivery_date as timestamp) as estimated_delivery_at
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:41.847070 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:42.417007 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:5ab4d7b5-8544-4405-9a52-9e286ff43770&page=queryresults
+[0m14:26:43.037863 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30dd9c750>]}
+[0m14:26:43.038595 [info ] [Thread-1 (]: 7 of 18 OK created sql view model olist_raw_staging.stg_orders ................. [[32mCREATE VIEW (0 processed)[0m in 1.20s]
+[0m14:26:43.039438 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_orders
+[0m14:26:43.039822 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_product_category_name_translation
+[0m14:26:43.040357 [info ] [Thread-1 (]: 8 of 18 START sql view model olist_raw_staging.stg_product_category_name_translation  [RUN]
+[0m14:26:43.040912 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_orders, now model.olist_analytics.stg_product_category_name_translation)
+[0m14:26:43.041320 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_product_category_name_translation
+[0m14:26:43.044078 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_product_category_name_translation"
+[0m14:26:43.044716 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_product_category_name_translation
+[0m14:26:43.046840 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_product_category_name_translation"
+[0m14:26:43.047378 [debug] [Thread-1 (]: On model.olist_analytics.stg_product_category_name_translation: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_product_category_name_translation"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_product_category_name_translation`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`category_translation`
+),
+
+renamed as (
+    select
+        string_field_0 as product_category_name,
+        string_field_1 as product_category_name_english
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:43.047700 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:43.806418 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:59e0e8fc-e8c6-4e96-901a-8e08212f3129&page=queryresults
+[0m14:26:44.839672 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16fa8c110>]}
+[0m14:26:44.840989 [info ] [Thread-1 (]: 8 of 18 OK created sql view model olist_raw_staging.stg_product_category_name_translation  [[32mCREATE VIEW (0 processed)[0m in 1.80s]
+[0m14:26:44.841755 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_product_category_name_translation
+[0m14:26:44.842310 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_products
+[0m14:26:44.842874 [info ] [Thread-1 (]: 9 of 18 START sql view model olist_raw_staging.stg_products .................... [RUN]
+[0m14:26:44.843594 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_product_category_name_translation, now model.olist_analytics.stg_products)
+[0m14:26:44.844086 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_products
+[0m14:26:44.847935 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_products"
+[0m14:26:44.848990 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_products
+[0m14:26:44.852046 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_products"
+[0m14:26:44.852948 [debug] [Thread-1 (]: On model.olist_analytics.stg_products: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_products"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_products`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`products`
+),
+
+renamed as (
+    select
+        product_id,
+        product_category_name,
+        product_name_lenght as name_length, -- fixing typo in original dataset
+        product_description_lenght as description_length,
+        product_photos_qty as photos_quantity,
+        product_weight_g as weight_g,
+        product_length_cm as length_cm,
+        product_height_cm as height_cm,
+        product_width_cm as width_cm
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:44.853403 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:45.731002 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:1cc890a5-2b7b-4fc1-86ac-9fb250cdbcd8&page=queryresults
+[0m14:26:46.456102 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x308f6bb10>]}
+[0m14:26:46.457387 [info ] [Thread-1 (]: 9 of 18 OK created sql view model olist_raw_staging.stg_products ............... [[32mCREATE VIEW (0 processed)[0m in 1.61s]
+[0m14:26:46.458180 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_products
+[0m14:26:46.458709 [debug] [Thread-1 (]: Began running node model.olist_analytics.stg_sellers
+[0m14:26:46.459260 [info ] [Thread-1 (]: 10 of 18 START sql view model olist_raw_staging.stg_sellers .................... [RUN]
+[0m14:26:46.459929 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_products, now model.olist_analytics.stg_sellers)
+[0m14:26:46.460429 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.stg_sellers
+[0m14:26:46.467107 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.stg_sellers"
+[0m14:26:46.468348 [debug] [Thread-1 (]: Began executing node model.olist_analytics.stg_sellers
+[0m14:26:46.471143 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.stg_sellers"
+[0m14:26:46.472092 [debug] [Thread-1 (]: On model.olist_analytics.stg_sellers: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.stg_sellers"} */
+
+
+  create or replace view `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_sellers`
+  OPTIONS()
+  as with source as (
+    select * from `stellar-verve-478012-n6`.`olist_raw`.`sellers`
+),
+
+renamed as (
+    select
+        seller_id,
+        seller_zip_code_prefix as zip_code,
+        seller_city as city,
+        seller_state as state
+    from source
+)
+
+select * from renamed;
+
+
+[0m14:26:46.472652 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:47.248764 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:d73b1df8-a10f-4b25-bbb0-60f0bbbdfc3f&page=queryresults
+[0m14:26:48.147925 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30ddeaf50>]}
+[0m14:26:48.149080 [info ] [Thread-1 (]: 10 of 18 OK created sql view model olist_raw_staging.stg_sellers ............... [[32mCREATE VIEW (0 processed)[0m in 1.69s]
+[0m14:26:48.149813 [debug] [Thread-1 (]: Finished running node model.olist_analytics.stg_sellers
+[0m14:26:48.150316 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_customers
+[0m14:26:48.151079 [info ] [Thread-1 (]: 11 of 18 START sql table model olist_raw_analytics.dim_customers ............... [RUN]
+[0m14:26:48.151609 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.stg_sellers, now model.olist_analytics.dim_customers)
+[0m14:26:48.152039 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_customers
+[0m14:26:48.155814 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_customers"
+[0m14:26:48.156988 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_customers
+[0m14:26:48.159929 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:48.610946 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_customers"
+[0m14:26:48.612858 [debug] [Thread-1 (]: On model.olist_analytics.dim_customers: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_customers"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_customers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with customers as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_customers`
+)
+
+select
+    customer_id,        -- Included as requested (Primary Key)
+    customer_unique_id, -- The actual person's ID (Foreign Key to user history)
+    zip_code,
+    city,
+    state
+from customers
+    );
+  
+[0m14:26:49.827506 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:6ba15561-6551-4898-923c-5d4d149beb91&page=queryresults
+[0m14:26:53.007405 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30dd5d7d0>]}
+[0m14:26:53.008510 [info ] [Thread-1 (]: 11 of 18 OK created sql table model olist_raw_analytics.dim_customers .......... [[32mCREATE TABLE (99.4k rows, 8.6 MiB processed)[0m in 4.86s]
+[0m14:26:53.009431 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_customers
+[0m14:26:53.010310 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_geolocation
+[0m14:26:53.011096 [info ] [Thread-1 (]: 12 of 18 START sql table model olist_raw_analytics.dim_geolocation ............. [RUN]
+[0m14:26:53.011724 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_customers, now model.olist_analytics.dim_geolocation)
+[0m14:26:53.012087 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_geolocation
+[0m14:26:53.015412 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_geolocation"
+[0m14:26:53.016320 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_geolocation
+[0m14:26:53.018828 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:26:53.415310 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_geolocation"
+[0m14:26:53.417383 [debug] [Thread-1 (]: On model.olist_analytics.dim_geolocation: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_geolocation"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_geolocation`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with geolocation as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_geolocation`
+)
+
+select
+    zip_code,
+    -- Calculate the center point of the zip code
+    avg(latitude) as latitude,
+    avg(longitude) as longitude,
+    max(city) as city,
+    max(state) as state
+from geolocation
+group by zip_code
+    );
+  
+[0m14:26:54.317951 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:2b58f984-8d19-42c6-8c5b-7723bd346f79&page=queryresults
+[0m14:27:01.724059 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30dd85c90>]}
+[0m14:27:01.725517 [info ] [Thread-1 (]: 12 of 18 OK created sql table model olist_raw_analytics.dim_geolocation ........ [[32mCREATE TABLE (19.0k rows, 58.4 MiB processed)[0m in 8.71s]
+[0m14:27:01.726411 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_geolocation
+[0m14:27:01.726954 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_payments
+[0m14:27:01.727504 [info ] [Thread-1 (]: 13 of 18 START sql table model olist_raw_analytics.dim_payments ................ [RUN]
+[0m14:27:01.728159 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_geolocation, now model.olist_analytics.dim_payments)
+[0m14:27:01.728718 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_payments
+[0m14:27:01.733136 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_payments"
+[0m14:27:01.734541 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_payments
+[0m14:27:01.737676 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:02.423750 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_payments"
+[0m14:27:02.424991 [debug] [Thread-1 (]: On model.olist_analytics.dim_payments: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_payments"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_payments`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with payments as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_payments`
+)
+
+select
+    -- Generate a unique key for each payment row
+    concat(order_id, '-', cast(payment_sequential as string)) as payment_sk,
+    
+    order_id,
+    payment_sequential,
+    payment_type,
+    payment_installments,
+    payment_value
+from payments
+    );
+  
+[0m14:27:03.446625 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:e8068722-f18f-4f14-be80-cc103597b018&page=queryresults
+[0m14:27:06.574746 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30de6c2d0>]}
+[0m14:27:06.575315 [info ] [Thread-1 (]: 13 of 18 OK created sql table model olist_raw_analytics.dim_payments ........... [[32mCREATE TABLE (103.9k rows, 5.5 MiB processed)[0m in 4.85s]
+[0m14:27:06.575634 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_payments
+[0m14:27:06.575852 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_reviews
+[0m14:27:06.576071 [info ] [Thread-1 (]: 14 of 18 START sql table model olist_raw_analytics.dim_reviews ................. [RUN]
+[0m14:27:06.576443 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_payments, now model.olist_analytics.dim_reviews)
+[0m14:27:06.576818 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_reviews
+[0m14:27:06.578726 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_reviews"
+[0m14:27:06.579179 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_reviews
+[0m14:27:06.580376 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:06.990509 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_reviews"
+[0m14:27:06.991963 [debug] [Thread-1 (]: On model.olist_analytics.dim_reviews: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_reviews"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_reviews`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with reviews as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_reviews`
+)
+
+select
+    review_id,
+    order_id,
+    review_score,
+    review_comment_title,
+    review_comment_message,
+    created_at as review_created_at,
+    answer_timestamp as review_answered_at
+from reviews
+    );
+  
+[0m14:27:07.661843 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:c0f47270-5040-4d8c-b258-236d6a8430d8&page=queryresults
+[0m14:27:11.730738 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30dec4950>]}
+[0m14:27:11.732446 [info ] [Thread-1 (]: 14 of 18 OK created sql table model olist_raw_analytics.dim_reviews ............ [[32mCREATE TABLE (99.2k rows, 13.8 MiB processed)[0m in 5.15s]
+[0m14:27:11.733481 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_reviews
+[0m14:27:11.734050 [debug] [Thread-1 (]: Began running node model.olist_analytics.fct_order_items
+[0m14:27:11.734702 [info ] [Thread-1 (]: 15 of 18 START sql table model olist_raw_analytics.fct_order_items ............. [RUN]
+[0m14:27:11.735276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_reviews, now model.olist_analytics.fct_order_items)
+[0m14:27:11.735729 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.fct_order_items
+[0m14:27:11.740612 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.fct_order_items"
+[0m14:27:11.741798 [debug] [Thread-1 (]: Began executing node model.olist_analytics.fct_order_items
+[0m14:27:11.744690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:12.358679 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.fct_order_items"
+[0m14:27:12.359981 [debug] [Thread-1 (]: On model.olist_analytics.fct_order_items: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.fct_order_items"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`fct_order_items`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with items as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_order_items`
+),
+
+orders as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_orders`
+)
+
+select
+    -- Surrogate Key (Good practice to have a unique string for every row)
+    concat(items.order_id, '-', cast(items.order_item_id as string)) as order_item_sk,
+    
+    items.order_id,
+    items.order_item_id,
+    items.product_id,
+    items.seller_id,
+    
+    -- We bring in Customer ID from the orders table so we can slice sales by customer location later
+    orders.customer_id,
+    
+    items.price,
+    items.freight_value,
+    
+    -- Calculated Total
+    (items.price + items.freight_value) as total_order_value
+
+from items
+left join orders 
+    on items.order_id = orders.order_id
+    );
+  
+[0m14:27:13.246514 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:0e012a65-8e03-49cd-829f-16be308dc421&page=queryresults
+[0m14:27:19.369886 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x308b77d50>]}
+[0m14:27:19.370798 [info ] [Thread-1 (]: 15 of 18 OK created sql table model olist_raw_analytics.fct_order_items ........ [[32mCREATE TABLE (112.7k rows, 31.6 MiB processed)[0m in 7.63s]
+[0m14:27:19.371715 [debug] [Thread-1 (]: Finished running node model.olist_analytics.fct_order_items
+[0m14:27:19.372329 [debug] [Thread-1 (]: Began running node model.olist_analytics.fct_orders
+[0m14:27:19.373096 [info ] [Thread-1 (]: 16 of 18 START sql table model olist_raw_analytics.fct_orders .................. [RUN]
+[0m14:27:19.373746 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.fct_order_items, now model.olist_analytics.fct_orders)
+[0m14:27:19.374229 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.fct_orders
+[0m14:27:19.378171 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.fct_orders"
+[0m14:27:19.379315 [debug] [Thread-1 (]: Began executing node model.olist_analytics.fct_orders
+[0m14:27:19.382048 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:19.834501 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.fct_orders"
+[0m14:27:19.836181 [debug] [Thread-1 (]: On model.olist_analytics.fct_orders: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.fct_orders"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`fct_orders`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with orders as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_orders`
+)
+
+select
+    order_id,
+    customer_id,
+    order_status,
+    
+    -- Timestamps
+    purchase_at,
+    approved_at,
+    delivered_carrier_at,
+    delivered_customer_at,
+    estimated_delivery_at,
+
+    -- Calculated Metrics (BigQuery Syntax)
+    -- 1. How long did it take to deliver?
+    timestamp_diff(delivered_customer_at, purchase_at, hour) as time_to_delivery_hours,
+    
+    -- 2. Was it late? (Difference between estimated and actual)
+    -- Positive numbers mean it arrived early, Negative means it was late
+    timestamp_diff(estimated_delivery_at, delivered_customer_at, day) as days_early_or_late
+
+from orders
+    );
+  
+[0m14:27:20.546622 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:9903b865-3f9d-4789-808b-73d38eb27be2&page=queryresults
+[0m14:27:24.419166 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30de79690>]}
+[0m14:27:24.420584 [info ] [Thread-1 (]: 16 of 18 OK created sql table model olist_raw_analytics.fct_orders ............. [[32mCREATE TABLE (99.4k rows, 16.8 MiB processed)[0m in 5.05s]
+[0m14:27:24.421376 [debug] [Thread-1 (]: Finished running node model.olist_analytics.fct_orders
+[0m14:27:24.421919 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_products
+[0m14:27:24.422593 [info ] [Thread-1 (]: 17 of 18 START sql table model olist_raw_analytics.dim_products ................ [RUN]
+[0m14:27:24.423249 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.fct_orders, now model.olist_analytics.dim_products)
+[0m14:27:24.423738 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_products
+[0m14:27:24.428218 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_products"
+[0m14:27:24.429544 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_products
+[0m14:27:24.432260 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:24.788023 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_products"
+[0m14:27:24.789841 [debug] [Thread-1 (]: On model.olist_analytics.dim_products: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_products"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_products`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with products as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_products`
+),
+
+translations as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_product_category_name_translation`
+)
+
+select
+    p.product_id,
+    -- If english name is null, fall back to original name, then to 'Unknown'
+    coalesce(t.product_category_name_english, p.product_category_name, 'Unknown') as category_name,
+    p.photos_quantity,
+    p.weight_g,
+    p.length_cm,
+    p.height_cm,
+    p.width_cm
+from products p
+left join translations t 
+    on p.product_category_name = t.product_category_name
+    );
+  
+[0m14:27:25.687275 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:4be2070f-50ff-414d-84da-a0a66ab5262a&page=queryresults
+[0m14:27:29.667108 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x30de8b450>]}
+[0m14:27:29.668305 [info ] [Thread-1 (]: 17 of 18 OK created sql table model olist_raw_analytics.dim_products ........... [[32mCREATE TABLE (33.0k rows, 2.3 MiB processed)[0m in 5.24s]
+[0m14:27:29.668978 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_products
+[0m14:27:29.669454 [debug] [Thread-1 (]: Began running node model.olist_analytics.dim_sellers
+[0m14:27:29.670066 [info ] [Thread-1 (]: 18 of 18 START sql table model olist_raw_analytics.dim_sellers ................. [RUN]
+[0m14:27:29.670558 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.olist_analytics.dim_products, now model.olist_analytics.dim_sellers)
+[0m14:27:29.670921 [debug] [Thread-1 (]: Began compiling node model.olist_analytics.dim_sellers
+[0m14:27:29.674208 [debug] [Thread-1 (]: Writing injected SQL for node "model.olist_analytics.dim_sellers"
+[0m14:27:29.675185 [debug] [Thread-1 (]: Began executing node model.olist_analytics.dim_sellers
+[0m14:27:29.677544 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:27:30.040388 [debug] [Thread-1 (]: Writing runtime sql for node "model.olist_analytics.dim_sellers"
+[0m14:27:30.044254 [debug] [Thread-1 (]: On model.olist_analytics.dim_sellers: /* {"app": "dbt", "dbt_version": "1.9.6", "profile_name": "olist_analytics", "target_name": "dev", "node_id": "model.olist_analytics.dim_sellers"} */
+
+  
+    
+
+    create or replace table `stellar-verve-478012-n6`.`olist_raw_analytics`.`dim_sellers`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with sellers as (
+    select * from `stellar-verve-478012-n6`.`olist_raw_staging`.`stg_sellers`
+)
+
+select
+    seller_id,
+    zip_code,
+    city,
+    state
+from sellers
+    );
+  
+[0m14:27:30.906232 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=stellar-verve-478012-n6&j=bq:US:0da84591-b9b4-4a99-917e-187e012c4adc&page=queryresults
+[0m14:27:33.086194 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1ba994f2-c2d0-4134-b65a-4ffc11048ac5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x16f9bc650>]}
+[0m14:27:33.087749 [info ] [Thread-1 (]: 18 of 18 OK created sql table model olist_raw_analytics.dim_sellers ............ [[32mCREATE TABLE (3.1k rows, 170.5 KiB processed)[0m in 3.42s]
+[0m14:27:33.088678 [debug] [Thread-1 (]: Finished running node model.olist_analytics.dim_sellers
+[0m14:27:33.090703 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:27:33.091512 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:27:33.091899 [debug] [MainThread]: Connection 'model.olist_analytics.dim_sellers' was properly closed.
+[0m14:27:33.092511 [info ] [MainThread]: 
+[0m14:27:33.092961 [info ] [MainThread]: Finished running 9 table models, 9 view models in 0 hours 1 minutes and 4.07 seconds (64.07s).
+[0m14:27:33.096465 [debug] [MainThread]: Command end result
+[0m14:27:33.125164 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/target/manifest.json
+[0m14:27:33.126993 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/target/semantic_manifest.json
+[0m14:27:33.131681 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/govindandhanasekaran/Dev/Github/DSAI-Group2-project/dbt/olist_analytics/target/run_results.json
+[0m14:27:33.131887 [info ] [MainThread]: 
+[0m14:27:33.132114 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:27:33.132292 [info ] [MainThread]: 
+[0m14:27:33.132480 [info ] [MainThread]: Done. PASS=18 WARN=0 ERROR=0 SKIP=0 TOTAL=18
+[0m14:27:33.132838 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 68.93613, "process_in_blocks": "0", "process_kernel_time": 2.437818, "process_mem_max_rss": "474726400", "process_out_blocks": "0", "process_user_time": 5.897866}
+[0m14:27:33.133137 [debug] [MainThread]: Command `dbt run` succeeded at 14:27:33.133074 after 68.94 seconds
+[0m14:27:33.133393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b9990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077b9510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100f1f590>]}
+[0m14:27:33.133598 [debug] [MainThread]: Flushing usage events
+[0m14:27:34.470489 [debug] [MainThread]: An error was encountered while trying to flush usage events

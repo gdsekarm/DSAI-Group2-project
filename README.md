@@ -466,6 +466,7 @@ models:
 `dbt run`
 
 -----
+
 16:13:20  1 of 16 START sql table model olist_raw_analytics.dim_date ..................... [RUN]
 16:13:23  1 of 16 OK created sql table model olist_raw_analytics.dim_date ................ [CREATE TABLE (1.5k rows, 0 processed) in 2.81s]
 16:13:23  2 of 16 START sql view model olist_raw_staging.stg_customers ................... [RUN]
@@ -504,6 +505,7 @@ models:
 16:14:08  Completed successfully
 16:14:08  
 16:14:08  Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16
+
 ------
 creates dim and fact table in bigQuery
 ![alt text](image-2.png)
@@ -530,15 +532,15 @@ Reun below commands
 
 `cd ..`
 
-`cd d ./dbt/olist_analytics/`
+`cd ./dbt/olist_analytics/`
 
 `dbt run`
 
-`ccd ../..`
+`cd ../..`
 
 `python bq_checks.py`
 
-`dashboard_rev2.py`
+`streamlit run dashboard_rev2.py`
 
 
 
