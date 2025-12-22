@@ -47,9 +47,10 @@ st.title("🇧🇷 Brazilian E-Commerce Strategic Dashboard")
 st.markdown("### 🚀 Module 2 Project: High-Level Business Intelligence")
 
 # --- 2. AUTHENTICATION ---
-KEY_FILE = 'stellar-verve-478012-n6-5c79fd657d1a.json'
+KEY_FILE = '/Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json'
 PROJECT_ID = 'stellar-verve-478012-n6'
 DATASET = 'olist_raw_analytics'
+
 
 @st.cache_resource
 def get_client():

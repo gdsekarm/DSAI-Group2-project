@@ -466,44 +466,74 @@ models:
 `dbt run`
 
 -----
-
 16:13:20  1 of 16 START sql table model olist_raw_analytics.dim_date ..................... [RUN]
+
 16:13:23  1 of 16 OK created sql table model olist_raw_analytics.dim_date ................ [CREATE TABLE (1.5k rows, 0 processed) in 2.81s]
+
 16:13:23  2 of 16 START sql view model olist_raw_staging.stg_customers ................... [RUN]
+
 16:13:24  2 of 16 OK created sql view model olist_raw_staging.stg_customers .............. [CREATE VIEW (0 processed) in 1.31s]
+
 16:13:24  3 of 16 START sql view model olist_raw_staging.stg_geolocation ................. [RUN]
+
 16:13:26  3 of 16 OK created sql view model olist_raw_staging.stg_geolocation ............ [CREATE VIEW (0 processed) in 1.39s]
+
 16:13:26  4 of 16 START sql view model olist_raw_staging.stg_order_items ................. [RUN]
+
 16:13:27  4 of 16 OK created sql view model olist_raw_staging.stg_order_items ............ [CREATE VIEW (0 processed) in 1.44s]
+
 16:13:27  5 of 16 START sql view model olist_raw_staging.stg_order_payments .............. [RUN]
+
 16:13:29  5 of 16 OK created sql view model olist_raw_staging.stg_order_payments ......... [CREATE VIEW (0 processed) in 1.62s]
+
 16:13:29  6 of 16 START sql view model olist_raw_staging.stg_order_reviews ............... [RUN]
+
 16:13:30  6 of 16 OK created sql view model olist_raw_staging.stg_order_reviews .......... [CREATE VIEW (0 processed) in 1.43s]
+
 16:13:30  7 of 16 START sql view model olist_raw_staging.stg_orders ...................... [RUN]
+
 16:13:32  7 of 16 OK created sql view model olist_raw_staging.stg_orders ................. [CREATE VIEW (0 processed) in 1.69s]
+
 16:13:32  8 of 16 START sql view model olist_raw_staging.stg_product_category_name_translation  [RUN]
+
 16:13:33  8 of 16 OK created sql view model olist_raw_staging.stg_product_category_name_translation  [CREATE VIEW (0 processed) in 1.18s]
+
 16:13:33  9 of 16 START sql view model olist_raw_staging.stg_products .................... [RUN]
+
 16:13:34  9 of 16 OK created sql view model olist_raw_staging.stg_products ............... [CREATE VIEW (0 processed) in 1.52s]
+
 16:13:34  10 of 16 START sql view model olist_raw_staging.stg_sellers .................... [RUN]
+
 16:13:36  10 of 16 OK created sql view model olist_raw_staging.stg_sellers ............... [CREATE VIEW (0 processed) in 1.23s]
+
 16:13:36  11 of 16 START sql table model olist_raw_analytics.dim_customers ............... [RUN]
+
 16:13:40  11 of 16 OK created sql table model olist_raw_analytics.dim_customers .......... [CREATE TABLE (96.1k rows, 8.6 MiB processed) in 4.40s]
+
 16:13:40  12 of 16 START sql table model olist_raw_analytics.dim_geolocation ............. [RUN]
+
 16:13:48  12 of 16 OK created sql table model olist_raw_analytics.dim_geolocation ........ [CREATE TABLE (19.0k rows, 58.4 MiB processed) in 7.78s]
+
 16:13:48  13 of 16 START sql table model olist_raw_analytics.fct_order_items ............. [RUN]
+
 16:13:55  13 of 16 OK created sql table model olist_raw_analytics.fct_order_items ........ [CREATE TABLE (112.7k rows, 31.6 MiB processed) in 6.90s]
+
 16:13:55  14 of 16 START sql table model olist_raw_analytics.fct_orders .................. [RUN]
+
 16:14:00  14 of 16 OK created sql table model olist_raw_analytics.fct_orders ............. [CREATE TABLE (99.4k rows, 16.8 MiB processed) in 4.77s]
+
 16:14:00  15 of 16 START sql table model olist_raw_analytics.dim_products ................ [RUN]
+
 16:14:05  15 of 16 OK created sql table model olist_raw_analytics.dim_products ........... [CREATE TABLE (33.0k rows, 2.3 MiB processed) in 4.91s]
+
 16:14:05  16 of 16 START sql table model olist_raw_analytics.dim_sellers ................. [RUN]
+
 16:14:08  16 of 16 OK created sql table model olist_raw_analytics.dim_sellers ............ [CREATE TABLE (3.1k rows, 170.5 KiB processed) in 3.27s]
-16:14:08  
+
 16:14:08  Finished running 7 table models, 9 view models in 0 hours 0 minutes and 51.38 seconds (51.38s).
-16:14:08  
+
 16:14:08  Completed successfully
-16:14:08  
+
 16:14:08  Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16
 
 ------
@@ -511,13 +541,56 @@ creates dim and fact table in bigQuery
 ![alt text](image-2.png)
 
 
+# Greate Expectation Setup
+Edit bq_check.py. 
+
+Replace, project id, database name, and key_path with your config.
+
+``` 
+# 2. DEFINE CONNECTION VARIABLES
+# ------------------------------
+project_id = "stellar-verve-478012-n6".   
+dataset_name = "olist_raw_analytics"
+table_name = "fct_order_items"
+# Ensure the key file is in your current directory
+key_path = "stellar-verve-478012-n6-5c79fd657d1a.json" 
+
+```
+Run the below command
+
+`python bq_checks.py`
+
+The. output should be as shown below
+-------
+![alt text](image-5.png)
+------
+It will open a HTML page as shown belwo.
+-----
+![alt text](image-4.png)
+-----
+
+# Visualization
+
 Edit dashboard_rev2.py and Replace,  with your credentials in the below lines in the file. 
-# --- 2. AUTHENTICATION ---
-KEY_FILE = 'stellar-verve-478012-n6-5c79fd657d1a.json'
+
+```
+KEY_FILE = '/Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json'
 PROJECT_ID = 'stellar-verve-478012-n6'
 DATASET = 'olist_raw_analytics'
 
-#### How to run the final poroject After setup
+```
+Run the below command
+
+This will open an interactive webpage for the dashboard.
+
+`streamlit dashboard_rev2.py`
+
+![alt text](image-6.png)
+
+----------
+
+
+# How to run the final poroject After all above setup
 
 Reun below commands
 `conda env update -f prj-environment.yml --prune`
@@ -541,17 +614,4 @@ Reun below commands
 `python bq_checks.py`
 
 `streamlit run dashboard_rev2.py`
-
-
-
-
-
-
-
-
-
-
-
-
-
 

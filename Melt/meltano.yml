@@ -15,7 +15,7 @@ plugins:
         args: run-operation
         description: Run a specific dbt operation macro
     config:
-      keyfile: stellar-verve-478012-n6-5c79fd657d1a.json
+      keyfile: /Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json
       project: stellar-verve-478012-n6
       dataset: dbt_dev
 

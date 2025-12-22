@@ -8,7 +8,7 @@ meltano:
       # These env_vars are standard for Meltano dbt-bigquery
       project: stellar-verve-478012-n6
       dataset: dbt_dev
-      keyfile: /Users/govindandhanasekaran/Dev/Github/M2_PROJECT/stellar-verve-478012-n6-5c79fd657d1a.json
+      keyfile: /Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json
       threads: 1
       timeout_seconds: 300
       location: US

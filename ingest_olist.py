@@ -10,7 +10,7 @@ KAGGLE_DATASET = "olistbr/brazilian-ecommerce"
 LOCAL_DOWNLOAD_PATH = "./temp_data"
 GCS_BUCKET_NAME = "dsai2-olist-raw-data"    # Your GCS Bucket Name
 GCS_DESTINATION_FOLDER = "raw/olist/"      # Folder inside the bucket
-GCP_KEY_PATH = "stellar-verve-478012-n6-5c79fd657d1a.json"              # Path to your Service Account Key
+GCP_KEY_PATH = "/Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json"              # Path to your Service Account Key
 
 def download_from_kaggle():
     """Authenticates and downloads dataset from Kaggle."""

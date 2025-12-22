@@ -11,8 +11,7 @@ context = gx.get_context()
 project_id = "stellar-verve-478012-n6"
 dataset_name = "olist_raw_analytics"
 table_name = "fct_order_items"
-# Ensure the key file is in your current directory
-key_path = "stellar-verve-478012-n6-5c79fd657d1a.json" 
+key_path = "/Users/govindandhanasekaran/Dev/Github/stellar-verve-478012-n6-5c79fd657d1a.json"
 
 # Connection string (Same as before)
 connection_string = f"bigquery://{project_id}/{dataset_name}?credentials_path={key_path}"
